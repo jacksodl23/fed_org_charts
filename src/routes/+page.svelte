@@ -1,7 +1,27 @@
-<h1>Fed Org Charts</h1>
-<div id="chart_div"></div>
+<script>
+    import {Header, Content, Grid, Row, Column} from 'carbon-components-svelte';
+</script>
+
+<Header company="Deja Jackson" platformName="Fed Org Charts">
+
+</Header>
+
+<Content>
+    <Grid>
+        <Row>
+            <Column>
+                <div id="chart_div"></div>
+            </Column>
+        </Row>
+    </Grid>
+</Content>
+
 
 <svelte:head>
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/carbon-components-svelte/css/white.css"
+    />
     <script src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
         google.charts.load('current', {packages:["orgchart"]});
